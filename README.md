@@ -1,161 +1,98 @@
 # Customer-Support-Intelligence-System
 
-## Marcel Ambo Ndowah — Machine Learning Engineer
+## Marcel Ambo Ndowah — Junior to Mid-Level Machine Learning Engineer
 
 This repository contains an applied Customer Support Intelligence System designed to support real customer service workflows such as ticket categorization, prioritization, and insight extraction.
 
 The purpose of this project is to demonstrate how I approach machine learning work end to end: from problem framing and data handling to modeling, evaluation, and documentation. Reviewers should assess this repository as they would an internal ML project prepared for collaboration and iteration.
 
 ## About
-I am targeting a Machine Learning Engineer role at the junior to mid level, with a focus on applied ML systems that support business operations.
 
-This project reflects how I approach customer-support ML problems:
+I am targeting a Machine Learning Engineer role at the junior to mid level, focused on applied ML systems that operate on real, imperfect data.
 
-Start from operational pain points, not algorithms
+My work reflects the following principles:
 
-Translate support workflows into ML tasks
+Start from operational problems, not algorithms
 
-Build interpretable and maintainable solutions
+Prefer simple, inspectable baselines before complexity
 
-Communicate limitations and risks clearly
+Separate analysis, production code, and documentation clearly
 
-I prioritize solutions that are understandable by engineers, data teams, and non-ML stakeholders such as support leads.
+Document assumptions, risks, and limitations explicitly
+
+The goal is not to showcase advanced theory, but to demonstrate sound engineering judgment and structured thinking.
 
 ## Portfolio Overview
+This repository is organized to mirror how ML systems are developed and reviewed in production environments.
 
-This repository contains artefacts required to build and review a Customer Support Intelligence System:
+At a high level, it contains:
 
-Problem definitions — business-aligned ML objectives
+* Clear problem and system documentation
 
-Support data pipelines — ticket ingestion and cleaning
+* Reproducible data and modeling pipelines
 
-Exploratory analysis — understanding customer issues and noise
+* Inspectable analysis and evaluation outputs
 
-ML models — classification and prioritization baselines
+* Scripts that reflect real training and inference workflows
 
-Evaluation reports — performance and failure analysis
-
-Operational scripts — training and inference workflows
-
-Each artefact exists to show how raw customer support data becomes actionable intelligence.
+Each section is intentionally scoped and documented to support review, debugging, and extension.
 
 ## Core Work Artefacts
-├── problems/
-│   └── support_problem_definition.md
+
+├── README.md
+├── pyproject.toml
+├── requirements.txt
+├── docs/
+│   ├── problem_statement.md
+│   ├── system_overview.md
+│   ├── assumptions_and_risks.md
+│   └── evaluation_criteria.md
 ├── data/
 │   ├── raw/
+│   ├── interim/
 │   ├── processed/
-│   └── data_quality_checks.md
+│   └── data_validation.md
 ├── notebooks/
-│   ├── ticket_exploration.ipynb
-│   ├── label_distribution.ipynb
-│   └── error_analysis.ipynb
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_label_analysis.ipynb
+│   └── 03_error_analysis.ipynb
 ├── src/
-│   ├── ingestion/
-│   ├── preprocessing/
-│   ├── features/
-│   ├── models/
-│   └── evaluation/
+│   └── support_intelligence/
+│       ├── ingestion/
+│       ├── preprocessing/
+│       ├── features/
+│       ├── models/
+│       └── evaluation/
+├── scripts/
+│   ├── train.py
+│   ├── evaluate.py
+│   └── predict.py
 ├── reports/
 │   ├── model_performance.md
 │   └── support_insights.md
-├── scripts/
-│   ├── train_model.py
-│   ├── evaluate_model.py
-│   └── predict_ticket.py
-└── README.md
+└── tests/
+    ├── test_preprocessing.py
+    ├── test_features.py
+    └── test_models.py
 
-## What These Artefacts Show
+## How to Read This Repository
 
-Problem definitions map support needs (routing, prioritization, tagging) to ML tasks.
+Reviewers can follow this path:
+1. Start with the problem context
+  * docs/problem_statement.md
 
-Data artefacts address messy, unbalanced, text-heavy support data.
+2. Understand the system design
+  * docs/system_overview.md
 
-Exploration notebooks inform labeling strategy and feature design.
+3. Inspect data and modeling logic
+  * src/support_intelligence/
+  * scripts/
 
-Models start with interpretable baselines suitable for support teams.
+4. Review evaluation and outcomes
 
-Reports translate metrics into operational impact.
+  * reports/model_performance.md
 
-Scripts reflect how models would be used in a real support pipeline.
-
-This mirrors ML workflows used in customer support automation and analytics.
-
-Issue Handling and Review Approach
-
-Customer support data is noisy and risk-prone. I handle issues explicitly.
-
-Data gaps, label noise, and ambiguity are documented.
-
-Misclassified tickets are reviewed and categorized.
-
-Issues are assessed based on support impact (e.g., wrong routing vs. low-priority error).
-
-Findings are written in plain language for both technical and non-technical reviewers.
-
-This approach supports informed decisions about model readiness and deployment risk.
-
-Technical and Workflow Depth
-
-The system follows an end-to-end customer support ML workflow:
-
-Define support objectives (e.g., ticket category prediction)
-
-Validate incoming ticket data
-
-Establish simple, interpretable baselines
-
-Iterate with controlled feature improvements
-
-Evaluate by class-level and error-type performance
-
-Produce insights relevant to support operations
-
-Data flows from raw tickets to processed features, into models, and out to actionable outputs such as predicted categories or priority levels.
-
-## Tools and Skills
-Skills Demonstrated
-
-Translating support workflows into ML tasks
-
-Text preprocessing for customer tickets
-
-Feature engineering for short, noisy text
-
-Supervised classification
-
-Model evaluation and error inspection
-
-ML system structuring for operational use
-
-Tools Used in This Repository
-
-Python — core implementation
-
-NumPy / pandas — data handling
-
-scikit-learn — modeling and evaluation
-
-Jupyter Notebook — exploratory analysis
-
-Git — version control and review
-
-All tools are used in direct support of the system, not for demonstration only.
-
-Professional Mindset
-
-I treat customer support ML systems as decision-support tools.
-
-I focus on reducing operational friction, not maximizing metrics.
-
-I value interpretability for trust and debugging.
-
-I validate models against real failure cases.
-
-I document assumptions so teams can evolve the system safely.
-
-My goal is to deliver ML systems that support teams can rely on and understand.
-
+reports/support_insights.md
 ## Contact
 GitHub: [https://github.com/your-github-username](https://github.com/marcndo)
 
