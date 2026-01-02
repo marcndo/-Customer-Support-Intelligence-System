@@ -2,13 +2,13 @@
 
 Machine Learning Engineering Portfolio
 
-Marcel Ambo Ndowah — Junior to Mid-Level Machine Learning Engineer
+Marcel Ambo Ndowah — Machine Learning Engineer
 
 This repository presents a focused portfolio of applied machine learning work. It is designed for hiring managers and technical reviewers who want to understand how I approach problems, structure work, and make decisions as a machine learning engineer.
 
 Reviewers should assess this repository as they would a real project handoff: by scanning structure first, then diving into artefacts to evaluate clarity, correctness, and engineering judgment.
 
-About
+## About
 
 I am targeting a Machine Learning Engineer role at the junior to mid level, working on applied ML systems rather than isolated experiments.
 
@@ -24,7 +24,7 @@ Documentation that supports review, debugging, and iteration
 
 I focus on building systems that can be understood, evaluated, and extended by other engineers. I value correctness, traceability, and alignment with real product or business constraints.
 
-Portfolio Overview
+## Portfolio Overview
 
 This repository contains end-to-end ML work organized as discrete, reviewable artefacts:
 
@@ -42,7 +42,7 @@ Operational scripts — training, evaluation, and inference entry points
 
 Each section exists to show how decisions are made, not just final results. A reviewer can trace outputs back to inputs, assumptions, and code.
 
-Core Work Artefacts
+## Core Work Artefacts
 Repository Structure
 ├── problems/
 │   └── problem_statement.md
@@ -66,7 +66,7 @@ Repository Structure
 │   └── infer.py
 └── README.md
 
-What These Artefacts Show
+## What These Artefacts Show
 
 Problem statements clarify scope and constraints before implementation.
 
@@ -165,9 +165,9 @@ My work prioritizes correctness, transparency, and maintainability over novelty.
 
 Contact
 
-GitHub: https://github.com/your-github-username
+GitHub: [https://github.com/your-github-username](https://github.com/marcndo)
 
-Email: your.email@example.com
+Email: ndowahmarcel@gmail.com
 
 Location: Cameroon (open to remote opportunities)
 
