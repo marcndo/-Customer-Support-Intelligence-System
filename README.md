@@ -41,7 +41,6 @@ Operational scripts — training and inference workflows
 Each artefact exists to show how raw customer support data becomes actionable intelligence.
 
 ## Core Work Artefacts
-Repository Structure
 ├── problems/
 │   └── support_problem_definition.md
 ├── data/
