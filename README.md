@@ -1,6 +1,6 @@
 # Customer-Support-Intelligence-System
 
-## Marcel Ambo Ndowah — Junior to Mid-Level Machine Learning Engineer
+## Marcel Ambo Ndowah — Machine Learning Engineer
 
 This repository contains an applied Customer Support Intelligence System designed to support real customer service workflows such as ticket categorization, prioritization, and insight extraction.
 
