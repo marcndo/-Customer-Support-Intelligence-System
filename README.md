@@ -38,7 +38,7 @@ At a high level, it contains:
 Each section is intentionally scoped and documented to support review, debugging, and extension.
 
 ## Core Work Artefacts
-
+```
 ├── README.md
 ├── pyproject.toml
 ├── requirements.txt
@@ -74,7 +74,7 @@ Each section is intentionally scoped and documented to support review, debugging
     ├── test_preprocessing.py
     ├── test_features.py
     └── test_models.py
-
+```
 ## How to Read This Repository
 
 Reviewers can follow this path:
