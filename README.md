@@ -2,12 +2,11 @@
 
 ## Marcel Ambo Ndowah — Junior to Mid-Level Machine Learning Engineer
 
-This repository presents a Customer Support Intelligence System built as a professional machine learning portfolio project. It demonstrates how I design, implement, and evaluate ML components that support real customer support workflows such as ticket classification, prioritization, and insight extraction.
+This repository contains an applied Customer Support Intelligence System designed to support real customer service workflows such as ticket categorization, prioritization, and insight extraction.
 
-Reviewers should assess this repository as they would an internal ML system: by examining problem framing, data handling, model choices, evaluation rigor, and clarity of documentation.
+The purpose of this project is to demonstrate how I approach machine learning work end to end: from problem framing and data handling to modeling, evaluation, and documentation. Reviewers should assess this repository as they would an internal ML project prepared for collaboration and iteration.
 
 ## About
-
 I am targeting a Machine Learning Engineer role at the junior to mid level, with a focus on applied ML systems that support business operations.
 
 This project reflects how I approach customer-support ML problems:
