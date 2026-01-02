@@ -92,6 +92,84 @@ Reviewers can follow this path:
 
   * reports/model_performance.md
 
+Core Work Artefacts
+Documentation (docs/)
+
+Contains design reasoning, assumptions, risks, and evaluation criteria. These documents capture why decisions were made and define how success is measured.
+
+Source Code (src/)
+
+Implements data ingestion, preprocessing, feature construction, modeling, and evaluation as a structured Python package. This layout supports testing, reuse, and maintainability.
+
+Notebooks (notebooks/)
+
+Used only for exploratory analysis and error inspection. No production logic lives in notebooks.
+
+Scripts (scripts/)
+
+Provide entry points for training, evaluation, and inference. These reflect how the system would be run in practice.
+
+Reports (reports/)
+
+Summarize results, failure modes, and operational insights derived from the system.
+
+Issue Handling and Evaluation Approach
+
+Customer support data is noisy and ambiguous. Issues such as label inconsistency, class imbalance, and unclear tickets are expected.
+
+I handle these by:
+
+Documenting data quality findings explicitly
+
+Performing targeted error analysis
+
+Evaluating impact based on support workflow consequences
+
+Communicating limitations in plain language
+
+This supports informed decisions about system readiness and next steps.
+
+Tools and Skills Used
+Skills Demonstrated
+
+Translating business workflows into ML tasks
+
+Text data preprocessing and feature design
+
+Supervised classification
+
+Model evaluation and error analysis
+
+Reproducible ML system structuring
+
+Tools Used
+
+Python — implementation language
+
+NumPy / pandas — data handling
+
+scikit-learn — modeling and metrics
+
+Jupyter Notebook — exploratory analysis
+
+Git — version control
+
+All tools are used in direct support of the system.
+
+Professional Mindset
+
+I approach machine learning as an engineering discipline focused on reliability and impact.
+
+I prioritize clarity over complexity.
+
+I validate assumptions early.
+
+I treat metrics as decision aids, not goals.
+
+I document work so others can review and extend it.
+
+This repository reflects how I would contribute to a real ML team.
+
 reports/support_insights.md
 ## Contact
 GitHub: [https://github.com/your-github-username](https://github.com/marcndo)
