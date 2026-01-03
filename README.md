@@ -8,17 +8,17 @@ The purpose of this project is to demonstrate how I approach machine learning wo
 
 ## About
 
-I am targeting a Machine Learning Engineer role at the junior to mid level, focused on applied ML systems that operate on real, imperfect data.
+I am targeting a Machine Learning Engineer role, focused on applied ML systems that operate on real, imperfect data.
 
 My work reflects the following principles:
 
-Start from operational problems, not algorithms
+* Start from operational problems, not algorithms
 
-Prefer simple, inspectable baselines before complexity
+* Prefer simple, inspectable baselines before complexity
 
-Separate analysis, production code, and documentation clearly
+* Separate analysis, production code, and documentation clearly
 
-Document assumptions, risks, and limitations explicitly
+* Document assumptions, risks, and limitations explicitly
 
 The goal is not to showcase advanced theory, but to demonstrate sound engineering judgment and structured thinking.
 
