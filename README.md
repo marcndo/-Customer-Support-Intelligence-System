@@ -119,28 +119,20 @@ Customer support data is noisy and ambiguous. Issues such as label inconsistency
 
 I handle these by:
 
-Documenting data quality findings explicitly
-
-Performing targeted error analysis
-
-Evaluating impact based on support workflow consequences
-
-Communicating limitations in plain language
+* Documenting data quality findings explicitly
+* Performing targeted error analysis
+* Evaluating impact based on support workflow consequences
+* Communicating limitations in plain language
 
 This supports informed decisions about system readiness and next steps.
 
 Tools and Skills Used
 Skills Demonstrated
-
-Translating business workflows into ML tasks
-
-Text data preprocessing and feature design
-
-Supervised classification
-
-Model evaluation and error analysis
-
-Reproducible ML system structuring
+ * Translating business workflows into ML tasks
+ * Text data preprocessing and feature design
+ * Supervised classification
+ * Model evaluation and error analysis
+ * Reproducible ML system structuring
 
 Tools Used
 
