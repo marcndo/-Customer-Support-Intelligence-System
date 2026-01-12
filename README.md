@@ -167,7 +167,5 @@ reports/support_insights.md
 GitHub: [https://github.com/your-github-username](https://github.com/marcndo)
 
 Email: ndowahmarcel@gmail.com
-
 Location: Cameroon (open to remote opportunities)
-
 I am interested in junior to mid-level Machine Learning Engineer roles focused on applied ML systems, data-driven products, or AI-enabled services.
