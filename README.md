@@ -96,23 +96,14 @@ Core Work Artefacts
 Documentation (docs/)
 
 Contains design reasoning, assumptions, risks, and evaluation criteria. These documents capture why decisions were made and define how success is measured.
-
-Source Code (src/)
-
+```Source Code (src/)```
 Implements data ingestion, preprocessing, feature construction, modeling, and evaluation as a structured Python package. This layout supports testing, reuse, and maintainability.
-
-Notebooks (notebooks/)
-
+```Notebooks (notebooks/)```
 Used only for exploratory analysis and error inspection. No production logic lives in notebooks.
-
-Scripts (scripts/)
-
+```Scripts (scripts/)```
 Provide entry points for training, evaluation, and inference. These reflect how the system would be run in practice.
-
-Reports (reports/)
-
+```Reports (reports/)```
 Summarize results, failure modes, and operational insights derived from the system.
-
 Issue Handling and Evaluation Approach
 
 Customer support data is noisy and ambiguous. Issues such as label inconsistency, class imbalance, and unclear tickets are expected.
