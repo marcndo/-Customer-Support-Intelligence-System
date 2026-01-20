@@ -142,21 +142,6 @@ Tools Used
 * Git — version control
 
 All tools are used in direct support of the system.
-
-Professional Mindset
-
-I approach machine learning as an engineering discipline focused on reliability and impact.
-
-I prioritize clarity over complexity.
-
-I validate assumptions early.
-
-I treat metrics as decision aids, not goals.
-
-I document work so others can review and extend it.
-
-This repository reflects how I would contribute to a real ML team.
-
 reports/support_insights.md
 ## Contact
 GitHub: [https://github.com/your-github-username](https://github.com/marcndo)
