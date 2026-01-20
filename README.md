@@ -7,17 +7,11 @@ This repository contains an applied Customer Support Intelligence System designe
 The purpose of this project is to demonstrate how I approach machine learning work end to end: from problem framing and data handling to modeling, evaluation, and documentation. Reviewers should assess this repository as they would an internal ML project prepared for collaboration and iteration.
 
 ## About
-
 I am targeting a Machine Learning Engineer role, focused on applied ML systems that operate on real, imperfect data.
-
 My work reflects the following principles:
-
 * Start from operational problems, not algorithms
-
 * Prefer simple, inspectable baselines before complexity
-
 * Separate analysis, production code, and documentation clearly
-
 * Document assumptions, risks, and limitations explicitly
 
 The goal is not to showcase advanced theory, but to demonstrate sound engineering judgment and structured thinking.
