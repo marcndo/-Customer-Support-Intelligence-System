@@ -135,16 +135,11 @@ Skills Demonstrated
  * Reproducible ML system structuring
 
 Tools Used
-
-Python — implementation language
-
-NumPy / pandas — data handling
-
-scikit-learn — modeling and metrics
-
-Jupyter Notebook — exploratory analysis
-
-Git — version control
+* Python — implementation language
+* NumPy / pandas — data handling
+* scikit-learn — modeling and metrics
+* Jupyter Notebook — exploratory analysis
+* Git — version control
 
 All tools are used in direct support of the system.
 
