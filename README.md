@@ -2,7 +2,7 @@
 
 ## Marcel Ambo Ndowah: Machine Learning Engineer | Applied AI Systems
 
-###1. Overview
+### 1. Overview
 
 Customer support teams process large volumes of unstructured customer messages every day. These messages often contain ambiguous language, inconsistent formatting, and varying levels of urgency.
 
@@ -20,7 +20,7 @@ The system is capable of:
 * Providing operational insights through a dashboard
 
 This project demonstrates how machine learning systems can be structured and deployed to support real operational workflows.
-###2. Project Goals
+### 2. Project Goals
 This repository is designed to demonstrate the following engineering capabilities:
 * End-to-end machine learning system design
 * Text classification pipelines
@@ -32,7 +32,7 @@ This repository is designed to demonstrate the following engineering capabilitie
 * Lightweight UI dashboards for system monitoring
 The structure of the repository reflects how real ML systems are organized in production teams
 
-###3. System Architecture
+### 3. System Architecture
 The system processes incoming customer messages and produces structured analysis and suggested responses.
 
 High Level Architecture
@@ -60,7 +60,7 @@ Support Dashboard + Automated Responses
 ```
 
 The architecture combines classical machine learning models with modern agent-based orchestration.
-###4. Agent Workflow
+### 4. Agent Workflow
 When a customer message arrives, the system performs the following steps:
 1. Message ingestion
 The agent reads messages from the support channel.
@@ -77,15 +77,15 @@ The system estimates urgency:
 * Medium
 * Low
 
-###4. Knowledge retrieval
+### 4. Knowledge retrieval
 The system retrieves relevant support documentation from the internal knowledge base.
-###5. Response generation
+### 5. Response generation
 The system generates a suggested response grounded in retrieved information.
-###6. Agent action
+### 6. Agent action
 The agent can either:
 * suggest a response for human approval
 * automatically send the response
-###5 Example Workflow
+### 5 Example Workflow
 Example customer message:
 
 System output:
@@ -94,7 +94,7 @@ Priority: High
 "My payment failed but money was deducted from my account."
 Suggested Response:
 sample: "We’re sorry for the inconvenience. Our billing team is currently reviewing your transaction. Please allow 24 hours for confirmation. If the issue persists we will initiate a refund."
-###5. Repository Structure
+### 6. Repository Structure
 ```
 customer-support-intelligence-agent
 │
@@ -145,7 +145,7 @@ customer-support-intelligence-agent
 │
 └── tests/
 ```
-###7.Machine Learning Pipeline
+### 7.Machine Learning Pipeline
 
 The ML workflow follows a structured pipeline.
 
@@ -156,20 +156,20 @@ Initial analysis of support ticket data to understand:
 * label imbalance
 * potential data noise
 Exploration is performed in the notebooks/ directory.
-####2. Data Processing
+#### 2. Data Processing
 Text preprocessing includes:
 * text normalization
 * tokenization
 * stop-word removal
 * dataset validation
-####3. Feature Engineering
+#### 3. Feature Engineering
 Features include:
 * TF-IDF vectors
 * n-grams
 * message length signals
 * keyword indicators
 The system prioritizes interpretable feature pipelines.
-####4. Model Training
+#### 4. Model Training
 Models are trained for two tasks:
 Ticket Classification
 Predict the type of support request.
@@ -179,6 +179,59 @@ Baseline models include:
 * Logistic Regression
 * Gradient Boosting
 * Random Forest
-###Retrieval Augmented Generation (RAG)
+### 8. Retrieval Augmented Generation (RAG)
 The system includes a retrieval layer that searches internal support documentation.
 The retrieved information is used to ground generated responses, improving accuracy and reducing hallucinations.
+
+### 9. Dashboard
+A lightweight UI dashboard allows inspection of system behavior.
+The dashboard displays:
+* recent support tickets
+* predicted categories
+* predicted priorities
+* suggested responses
+* support analytics
+The dashboard is implemented using a simple Python web interface for demonstration purposes.
+
+#### 10. Evaluation
+Model performance is evaluated using standard classification metrics.
+Classification Metrics
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+Additional evaluation focuses on operational impact such as:
+* high priority detection
+* misclassification consequences
+* response relevance
+* Results are documented in:
+* reports/model_performance.md
+### 11. Known Challenges
+Customer support data contains several real-world difficulties:
+* inconsistent labeling
+* ambiguous messages
+* class imbalance
+* incomplete user input
+These issues are documented and analyzed through targeted error analysis.
+### 12. Technologies Used
+* Python
+* NumPy
+* pandas
+* scikit-learn
+* Jupyter Notebook
+* Git
+The system also includes components for:
+* AI agent orchestration
+* retrieval-based knowledge systems
+* lightweight UI dashboards
+### 13. Running the Project
+Install dependencies:
+```pip install -r requirements.txt```
+Train models:
+```python scripts/train.py```
+Evaluate models:
+```python scripts/evaluate.py```
+Run predictions:
+```python scripts/predict.py```
+Launch dashboard:
+```streamlit run ui/streamlit_app.py```
