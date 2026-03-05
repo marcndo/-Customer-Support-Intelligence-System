@@ -37,7 +37,7 @@ The system processes incoming customer messages and produces structured analysis
 
 High Level Architecture
 
-Customer Message
+```Customer Message
       │
       ▼
  Messaging Platform (Slack)
@@ -57,5 +57,6 @@ Structured Ticket Analysis
       │
       ▼
 Support Dashboard + Automated Responses
+```
 
 The architecture combines classical machine learning models with modern agent-based orchestration.
