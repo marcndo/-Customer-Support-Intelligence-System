@@ -225,13 +225,13 @@ The system also includes components for:
 * retrieval-based knowledge systems
 * lightweight UI dashboards
 ### 13. Running the Project
-Install dependencies:
+1. Install dependencies:
 ```pip install -r requirements.txt```
-Train models:
+2. Train models:
 ```python scripts/train.py```
-Evaluate models:
+3. Evaluate models:
 ```python scripts/evaluate.py```
-Run predictions:
+4. Run predictions:
 ```python scripts/predict.py```
-Launch dashboard:
+5. Launch dashboard:
 ```streamlit run ui/streamlit_app.py```
