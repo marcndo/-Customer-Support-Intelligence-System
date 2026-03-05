@@ -1,4 +1,4 @@
-# Customer-Support-Intelligence-System
+# AI Support Agent for Slack Support Channels
 
 ## Marcel Ambo Ndowah — Junior to Mid-Level Machine Learning Engineer
 
