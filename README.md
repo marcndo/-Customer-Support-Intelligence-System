@@ -1,136 +1,61 @@
 # AI Support Agent for Slack Support Channels
 
-## Marcel Ambo Ndowah — Junior to Mid-Level Machine Learning Engineer
+## Marcel Ambo Ndowah: Machine Learning Engineer | Applied AI Systems
 
-This repository contains an applied Customer Support Intelligence System designed to support real customer service workflows such as ticket categorization, prioritization, and insight extraction.
+###1. Overview
 
-The purpose of this project is to demonstrate how I approach machine learning work end to end: from problem framing and data handling to modeling, evaluation, and documentation. Reviewers should assess this repository as they would an internal ML project prepared for collaboration and iteration.
+Customer support teams process large volumes of unstructured customer messages every day. These messages often contain ambiguous language, inconsistent formatting, and varying levels of urgency.
 
-## About
-I am targeting a Machine Learning Engineer role, focused on applied ML systems that operate on real, imperfect data.
-My work reflects the following principles:
-* Start from operational problems, not algorithms
-* Prefer simple, inspectable baselines before complexity
-* Separate analysis, production code, and documentation clearly
-* Document assumptions, risks, and limitations explicitly
+The Customer Support Intelligence Agent is an applied AI system designed to assist customer support teams by automatically analyzing and responding to customer issues.
 
-The goal is not to showcase advanced theory, but to demonstrate sound engineering judgment and structured thinking.
+The system combines machine learning models, retrieval systems, and an AI agent architecture to simulate how modern AI-powered support tools operate in production environments.
 
-## Portfolio Overview
-This repository is organized to mirror how ML systems are developed and reviewed in production environments.
+The system is capable of:
 
-At a high level, it contains:
+* Categorizing incoming support tickets
+* Predicting ticket priority
+* Retrieving relevant knowledge base articles
+* Generating suggested support responses
+* Monitoring support channels
+* Providing operational insights through a dashboard
 
-* Clear problem and system documentation
+This project demonstrates how machine learning systems can be structured and deployed to support real operational workflows.
+###2. Project Goals
+This repository is designed to demonstrate the following engineering capabilities:
+* End-to-end machine learning system design
+* Text classification pipelines
+* Feature engineering for NLP
+* Model evaluation and error analysis
+* Retrieval-augmented generation (RAG)
+* Agent-based AI workflows
+* Integration with messaging platforms
+* Lightweight UI dashboards for system monitoring
+The structure of the repository reflects how real ML systems are organized in production teams
 
-* Reproducible data and modeling pipelines
+###3. System Architecture
+The system processes incoming customer messages and produces structured analysis and suggested responses.
 
-* Inspectable analysis and evaluation outputs
+High Level Architecture
 
-* Scripts that reflect real training and inference workflows
+Customer Message
+      │
+      ▼
+ Messaging Platform (Slack)
+      │
+      ▼
+  Support Intelligence Agent
+      │
+ ┌────┼───────────┬───────────┐
+ │    │           │           │
+ ▼    ▼           ▼           ▼
+Ticket   Priority   Knowledge   Response
+Classifier Predictor Retrieval  Generator
+  (ML)       (ML)      (RAG)       (LLM)
+      │
+      ▼
+Structured Ticket Analysis
+      │
+      ▼
+Support Dashboard + Automated Responses
 
-Each section is intentionally scoped and documented to support review, debugging, and extension.
-
-## Core Work Artefacts
-```
-├── README.md
-├── pyproject.toml
-├── requirements.txt
-├── docs/
-│   ├── problem_statement.md
-│   ├── system_overview.md
-│   ├── assumptions_and_risks.md
-│   └── evaluation_criteria.md
-├── data/
-│   ├── raw/
-│   ├── interim/
-│   ├── processed/
-│   └── data_validation.md
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_label_analysis.ipynb
-│   └── 03_error_analysis.ipynb
-├── src/
-│   └── support_intelligence/
-│       ├── ingestion/
-│       ├── preprocessing/
-│       ├── features/
-│       ├── models/
-│       └── evaluation/
-├── scripts/
-│   ├── train.py
-│   ├── evaluate.py
-│   └── predict.py
-├── reports/
-│   ├── model_performance.md
-│   └── support_insights.md
-└── tests/
-    ├── test_preprocessing.py
-    ├── test_features.py
-    └── test_models.py
-```
-## How to Read This Repository
-
-Reviewers can follow this path:
-1. Start with the problem context
-  * docs/problem_statement.md
-
-2. Understand the system design
-  * docs/system_overview.md
-
-3. Inspect data and modeling logic
-  * src/support_intelligence/
-  * scripts/
-
-4. Review evaluation and outcomes
-
-  * reports/model_performance.md
-
-Core Work Artefacts
-Documentation (docs/)
-
-Contains design reasoning, assumptions, risks, and evaluation criteria. These documents capture why decisions were made and define how success is measured.
-```Source Code (src/)```
-Implements data ingestion, preprocessing, feature construction, modeling, and evaluation as a structured Python package. This layout supports testing, reuse, and maintainability.
-```Notebooks (notebooks/)```
-Used only for exploratory analysis and error inspection. No production logic lives in notebooks.
-```Scripts (scripts/)```
-Provide entry points for training, evaluation, and inference. These reflect how the system would be run in practice.
-```Reports (reports/)```
-Summarize results, failure modes, and operational insights derived from the system.
-Issue Handling and Evaluation Approach
-
-Customer support data is noisy and ambiguous. Issues such as label inconsistency, class imbalance, and unclear tickets are expected.
-
-I handle these by:
-
-* Documenting data quality findings explicitly
-* Performing targeted error analysis
-* Evaluating impact based on support workflow consequences
-* Communicating limitations in plain language
-
-This supports informed decisions about system readiness and next steps.
-
-Tools and Skills Used
-Skills Demonstrated
- * Translating business workflows into ML tasks
- * Text data preprocessing and feature design
- * Supervised classification
- * Model evaluation and error analysis
- * Reproducible ML system structuring
-
-Tools Used
-* Python — implementation language
-* NumPy / pandas — data handling
-* scikit-learn — modeling and metrics
-* Jupyter Notebook — exploratory analysis
-* Git — version control
-
-All tools are used in direct support of the system.
-reports/support_insights.md
-## Contact
-GitHub: [https://github.com/your-github-username](https://github.com/marcndo)
-
-Email: ndowahmarcel@gmail.com
-Location: Cameroon (open to remote opportunities)
-I am interested in junior to mid-level Machine Learning Engineer roles focused on applied ML systems, data-driven products, or AI-enabled services.
+The architecture combines classical machine learning models with modern agent-based orchestration.
